@@ -208,7 +208,7 @@ export const HeroSection: React.FC = () => {
             {/* CTA Buttons */}
             <motion.div
               variants={fadeUpVariants}
-              className="flex flex-row items-center gap-4 sm:gap-6"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 w-full sm:w-auto"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               {/* Explore My Work CTA */}
@@ -217,11 +217,11 @@ export const HeroSection: React.FC = () => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 whileHover={{ scale: 1.02 }}
-                className="relative inline-flex items-center space-x-3 px-6 sm:px-7 py-3.5 border border-[#8C6D4F] bg-[#120F0C]/80 hover:border-[#D4AF37] text-[#EAD8C7] hover:text-[#FFF5EB] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300 shadow-[0_0_25px_rgba(212,175,55,0.18)]"
+                className="relative inline-flex items-center justify-center space-x-3 px-6 sm:px-8 py-4 border border-[#8C6D4F] bg-[#120F0C]/90 hover:border-[#D4AF37] text-white hover:text-[#FFF5EB] text-[13px] sm:text-sm md:text-base font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[0_0_25px_rgba(212,175,55,0.25)] text-center"
               >
-                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#E8D7C5]/40 to-transparent pointer-events-none" />
+                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#E8D7C5]/50 to-transparent pointer-events-none" />
                 <span>EXPLORE MY WORK</span>
-                <span className="transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-xs">
+                <span className="transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-sm">
                   ↗
                 </span>
               </motion.a>
@@ -234,10 +234,10 @@ export const HeroSection: React.FC = () => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 whileHover={{ scale: 1.02 }}
-                className="relative inline-flex items-center space-x-2 px-6 sm:px-7 py-3.5 border border-[#8C6D4F]/40 hover:border-[#8C6D4F] text-[#BFA895] hover:text-[#EAD8C7] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
+                className="relative inline-flex items-center justify-center space-x-2 px-6 sm:px-8 py-4 border border-[#8C6D4F]/70 hover:border-[#D4AF37] bg-[#1A1A1A]/70 text-white hover:text-[#FFF5EB] text-[13px] sm:text-sm md:text-base font-bold tracking-[0.2em] uppercase transition-all duration-300 text-center"
               >
                 <span>DOWNLOAD RESUME</span>
-                <span className="transform transition-transform duration-300 group-hover:translate-y-0.5 text-xs">
+                <span className="transform transition-transform duration-300 group-hover:translate-y-0.5 text-sm">
                   ↓
                 </span>
               </motion.a>

@@ -126,7 +126,7 @@ export const ContactSection: React.FC = () => {
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
+                    <span className="block text-[11px] font-mono tracking-[0.2em] uppercase text-[#C4B5A5] mb-2">
                       // SENDER
                     </span>
                     <input
@@ -135,13 +135,13 @@ export const ContactSection: React.FC = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Enter name"
-                      className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
+                      className="w-full bg-[#1A1A1A]/60 border border-[#8C6D4F]/60 focus:border-[#D4AF37] text-sm text-white placeholder-[#A8988B] px-4 py-3 outline-none rounded-sm transition-colors"
                       style={{ fontFamily: "'Montserrat', sans-serif" }}
                     />
                   </div>
 
                   <div>
-                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
+                    <span className="block text-[11px] font-mono tracking-[0.2em] uppercase text-[#C4B5A5] mb-2">
                       // CHANNEL
                     </span>
                     <input
@@ -150,14 +150,14 @@ export const ContactSection: React.FC = () => {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="Enter email"
-                      className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
+                      className="w-full bg-[#1A1A1A]/60 border border-[#8C6D4F]/60 focus:border-[#D4AF37] text-sm text-white placeholder-[#A8988B] px-4 py-3 outline-none rounded-sm transition-colors"
                       style={{ fontFamily: "'Montserrat', sans-serif" }}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
+                  <span className="block text-[11px] font-mono tracking-[0.2em] uppercase text-[#C4B5A5] mb-2">
                     // PAYLOAD
                   </span>
                   <textarea
@@ -166,7 +166,7 @@ export const ContactSection: React.FC = () => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Enter transmission payload..."
-                    className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 p-4 outline-none rounded-sm transition-colors resize-none"
+                    className="w-full bg-[#1A1A1A]/60 border border-[#8C6D4F]/60 focus:border-[#D4AF37] text-sm text-white placeholder-[#A8988B] p-4 outline-none rounded-sm transition-colors resize-none"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                   />
                 </div>
