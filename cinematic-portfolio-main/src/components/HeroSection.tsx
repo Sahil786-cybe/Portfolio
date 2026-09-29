@@ -65,11 +65,11 @@ export const HeroSection: React.FC = () => {
       )}
 
       {/* ================= 2. FIXED VIDEO LAYER ================= */}
-      <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none bg-black flex items-center justify-end">
+      <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none bg-black flex flex-col md:flex-row items-end md:items-center justify-end">
         <img
           src={heroImg}
           alt="Sahil Jamadar"
-          className="h-screen w-auto max-w-none object-contain origin-right scale-95 md:scale-[0.98] lg:scale-100 opacity-85"
+          className="absolute bottom-0 -right-24 sm:-right-10 md:right-0 md:relative h-[85vh] md:h-screen w-auto max-w-none object-contain origin-bottom-right md:origin-right scale-100 opacity-85"
         />
 
         {/* Seamless Soft Left Edge Blend */}

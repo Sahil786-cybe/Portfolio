@@ -84,6 +84,16 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
   const updateCardTransforms = useCallback(() => {
     if (!cardsRef.current.length || isUpdatingRef.current) return;
 
+    if (window.innerWidth < 768) {
+      cardsRef.current.forEach((card) => {
+        if (card) {
+          card.style.transform = 'none';
+          card.style.filter = 'none';
+        }
+      });
+      return;
+    }
+
     isUpdatingRef.current = true;
 
     const { scrollTop, containerHeight } = getScrollData();
